@@ -28,8 +28,19 @@ Build a small application with a .NET backend and any frontend of your choice.
 - Add search/filter on frontend.
 
 ## Delivery
-When you are done, please provide:
-1. **GitHub Repository Link** – containing your source code.  
-   - The repo should include clear instructions in the README on how to run the project if there is no deployment.
-2. **Deployed Application Link** (if available)
+You may choose **one** of the following delivery methods:
+
+### Option 1: Pull Request (Preferred)
+1. **Fork this repository**  
+2. Complete the task in your fork  
+3. Open a **Pull Request (PR)** to this repository (target branch: `candidate-submissions`)  
+4. In your PR description, please include:  
+   - **Deployed application link** (if available)  
+   - Notes or comments about your solution  
+
+### Option 2: Email Submission
+1. Complete task on your own repository. Make sure repo is public.
+ - The repo should include clear instructions in the README on how to run the project if there is no deployment.
+2. Send **GitHub Repository Link** to: **info@turanline.com**  
+
 

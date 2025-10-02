@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AddressesAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a40f4268df8f2bd3ccac056e3354c073fbcefd7a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5c648d79f00e71f77302dde713115566fb8aae74")]
 [assembly: System.Reflection.AssemblyProductAttribute("AddressesAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AddressesAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

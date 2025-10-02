@@ -28,29 +28,19 @@ namespace AddressesAPI.Repositories
             await _context.Addresses.AddAsync(address);
         }
 
-        public async Task UpdateAsync(Address address)
+        public void UpdateAsync(Address address)
         {
             _context.Addresses.Update(address);
         }
 
-        public async Task DeleteAsync(Address address)
+        public void DeleteAsync(Address address)
         {
             _context.Addresses.Remove(address);
         }
 
-        public async Task SaveChangesAsync()
+        public async Task<bool> SaveChangesAsync()
         {
-            await _context.SaveChangesAsync();
-        }
-
-        public Task DeleteAsync(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        Task<bool> IAddressRepository.SaveChangesAsync()
-        {
-            throw new NotImplementedException();
+            return (await _context.SaveChangesAsync()>0);
         }
     }
 }

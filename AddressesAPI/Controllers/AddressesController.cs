@@ -128,5 +128,23 @@ namespace AddressesAPI.Controllers
                 return StatusCode(500, "Bir hata oluştu.");
             }
         }
+
+        [HttpPost("bulk-import")]
+        public async Task<IActionResult> BulkImport([FromBody] List<string> lines)
+        {
+            if (lines == null || lines.Count == 0)
+                return BadRequest("Veri yok");
+            try
+            {
+                await _service.BulkImportAsync(lines);
+                return Ok("Adresler başarıyla eklendi.");
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "BulkImport failed.");
+                return StatusCode(500, "Bir hata oluştu.");
+            }
+
+        }
     }
 }

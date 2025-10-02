@@ -12,5 +12,6 @@ namespace AddressesAPI.Services
         Task<Address> CreateAddressAsync(AddressDto addressDto);
         Task<bool> UpdateAddressAsync(int id, AddressDto addressDto);
         Task<bool> DeleteAddressAsync(int id);
+        Task BulkImportAsync(IEnumerable<string> lines);
     }
 }

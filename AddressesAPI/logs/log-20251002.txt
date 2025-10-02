@@ -1,0 +1,125 @@
+2025-10-02 06:56:58.985 +03:00 [INF] Now listening on: https://localhost:7221
+2025-10-02 06:56:59.064 +03:00 [INF] Now listening on: http://localhost:5098
+2025-10-02 06:56:59.254 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-02 06:56:59.257 +03:00 [INF] Hosting environment: Development
+2025-10-02 06:56:59.260 +03:00 [INF] Content root path: C:\Users\acagr\source\repos\azmick\candidate-task\AddressesAPI
+2025-10-02 06:57:31.985 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/ - null null
+2025-10-02 06:57:32.370 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/ - 404 0 null 399.6996ms
+2025-10-02 06:57:32.395 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7221/, Response status code: 404
+2025-10-02 07:03:30.214 +03:00 [INF] Now listening on: https://localhost:7221
+2025-10-02 07:03:30.306 +03:00 [INF] Now listening on: http://localhost:5098
+2025-10-02 07:03:30.538 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-02 07:03:30.542 +03:00 [INF] Hosting environment: Development
+2025-10-02 07:03:30.545 +03:00 [INF] Content root path: C:\Users\acagr\source\repos\azmick\candidate-task\AddressesAPI
+2025-10-02 07:06:09.251 +03:00 [INF] Now listening on: https://localhost:7221
+2025-10-02 07:06:09.324 +03:00 [INF] Now listening on: http://localhost:5098
+2025-10-02 07:06:09.551 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-02 07:06:09.554 +03:00 [INF] Hosting environment: Development
+2025-10-02 07:06:09.556 +03:00 [INF] Content root path: C:\Users\acagr\source\repos\azmick\candidate-task\AddressesAPI
+2025-10-02 07:06:50.104 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7221/api/addresses - application/json 249
+2025-10-02 07:06:50.199 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-02 07:06:50.247 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-02 07:06:50.747 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-10-02 07:06:50.758 +03:00 [INF] GetAddresses endpoint called.
+2025-10-02 07:06:50.912 +03:00 [ERR] GetAddresses failed.
+System.NotImplementedException: The method or operation is not implemented.
+   at AddressService.AddressesAPI.Services.IAddressService.GetAllAddressesAsync() in C:\Users\acagr\source\repos\azmick\candidate-task\AddressesAPI\Services\AddressService.cs:line 61
+   at AddressesAPI.Controllers.AddressesController.GetAddresses() in C:\Users\acagr\source\repos\azmick\candidate-task\AddressesAPI\Controllers\AddressesController.cs:line 26
+2025-10-02 07:06:51.001 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2025-10-02 07:06:51.043 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 783.1203ms
+2025-10-02 07:06:51.051 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-02 07:06:51.061 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7221/api/addresses - 500 null text/plain; charset=utf-8 969.7329ms
+2025-10-02 07:07:31.399 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-02 07:07:31.649 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-02 07:07:31.654 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-02 07:07:31.676 +03:00 [INF] GetAddresses endpoint called.
+2025-10-02 07:07:31.857 +03:00 [ERR] GetAddresses failed.
+System.NotImplementedException: The method or operation is not implemented.
+   at AddressService.AddressesAPI.Services.IAddressService.GetAllAddressesAsync() in C:\Users\acagr\source\repos\azmick\candidate-task\AddressesAPI\Services\AddressService.cs:line 61
+   at AddressesAPI.Controllers.AddressesController.GetAddresses() in C:\Users\acagr\source\repos\azmick\candidate-task\AddressesAPI\Controllers\AddressesController.cs:line 26
+2025-10-02 07:07:31.878 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2025-10-02 07:07:31.894 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 233.8451ms
+2025-10-02 07:07:31.901 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-02 07:07:31.915 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 500 null text/plain; charset=utf-8 516.7979ms
+2025-10-02 07:07:41.932 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger - null null
+2025-10-02 07:07:41.955 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger - 301 0 null 23.0874ms
+2025-10-02 07:07:41.971 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - null null
+2025-10-02 07:07:42.103 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - 200 null text/html;charset=utf-8 131.4577ms
+2025-10-02 07:07:42.201 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/swagger-ui.css - null null
+2025-10-02 07:07:42.206 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.css - null null
+2025-10-02 07:07:42.206 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/swagger-ui-bundle.js - null null
+2025-10-02 07:07:42.219 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/swagger-ui-standalone-preset.js - null null
+2025-10-02 07:07:42.279 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.css - 200 152 text/css 72.9956ms
+2025-10-02 07:07:42.239 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.js - null null
+2025-10-02 07:07:42.240 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-02 07:07:42.250 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2025-10-02 07:07:42.385 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/swagger-ui.css - 200 23647 text/css 183.8555ms
+2025-10-02 07:07:42.390 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/swagger-ui-standalone-preset.js - 200 77352 text/javascript 171.8719ms
+2025-10-02 07:07:42.390 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.js - 200 null application/javascript;charset=utf-8 150.8288ms
+2025-10-02 07:07:42.432 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16509 application/javascript; charset=utf-8 192.655ms
+2025-10-02 07:07:42.404 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/swagger-ui-bundle.js - 200 424765 text/javascript 197.7634ms
+2025-10-02 07:07:42.530 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 280.1191ms
+2025-10-02 07:07:42.814 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - null null
+2025-10-02 07:07:42.852 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 38.1184ms
+2025-10-02 07:07:42.859 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/favicon-32x32.png - null null
+2025-10-02 07:07:42.879 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/favicon-32x32.png - 200 628 image/png 20.1211ms
+2025-10-02 07:07:47.936 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/Addresses - null null
+2025-10-02 07:07:47.947 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-02 07:07:47.951 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-02 07:07:47.971 +03:00 [INF] GetAddresses endpoint called.
+2025-10-02 07:07:48.019 +03:00 [ERR] GetAddresses failed.
+System.NotImplementedException: The method or operation is not implemented.
+   at AddressService.AddressesAPI.Services.IAddressService.GetAllAddressesAsync() in C:\Users\acagr\source\repos\azmick\candidate-task\AddressesAPI\Services\AddressService.cs:line 61
+   at AddressesAPI.Controllers.AddressesController.GetAddresses() in C:\Users\acagr\source\repos\azmick\candidate-task\AddressesAPI\Controllers\AddressesController.cs:line 26
+2025-10-02 07:07:48.028 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2025-10-02 07:07:48.035 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 72.086ms
+2025-10-02 07:07:48.039 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-02 07:07:48.043 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/Addresses - 500 null text/plain; charset=utf-8 108.7886ms
+2025-10-02 07:08:24.538 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/Addresses - null null
+2025-10-02 07:08:24.558 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-02 07:08:24.561 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-02 07:08:24.569 +03:00 [INF] GetAddresses endpoint called.
+2025-10-02 07:08:24.617 +03:00 [ERR] GetAddresses failed.
+System.NotImplementedException: The method or operation is not implemented.
+   at AddressService.AddressesAPI.Services.IAddressService.GetAllAddressesAsync() in C:\Users\acagr\source\repos\azmick\candidate-task\AddressesAPI\Services\AddressService.cs:line 61
+   at AddressesAPI.Controllers.AddressesController.GetAddresses() in C:\Users\acagr\source\repos\azmick\candidate-task\AddressesAPI\Controllers\AddressesController.cs:line 26
+2025-10-02 07:08:24.622 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2025-10-02 07:08:24.624 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 56.4747ms
+2025-10-02 07:08:24.630 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-02 07:08:24.633 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/Addresses - 500 null text/plain; charset=utf-8 95.224ms
+2025-10-02 07:11:49.241 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/Addresses - null null
+2025-10-02 07:11:49.284 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-02 07:11:49.287 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-02 07:11:49.292 +03:00 [INF] GetAddresses endpoint called.
+2025-10-02 07:11:49.338 +03:00 [ERR] GetAddresses failed.
+System.NotImplementedException: The method or operation is not implemented.
+   at AddressService.AddressesAPI.Services.IAddressService.GetAllAddressesAsync() in C:\Users\acagr\source\repos\azmick\candidate-task\AddressesAPI\Services\AddressService.cs:line 61
+   at AddressesAPI.Controllers.AddressesController.GetAddresses() in C:\Users\acagr\source\repos\azmick\candidate-task\AddressesAPI\Controllers\AddressesController.cs:line 26
+2025-10-02 07:11:49.378 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2025-10-02 07:11:49.382 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 90.1895ms
+2025-10-02 07:11:49.386 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-02 07:11:49.393 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/Addresses - 500 null text/plain; charset=utf-8 152.6921ms
+2025-10-02 07:12:30.183 +03:00 [INF] Now listening on: https://localhost:7221
+2025-10-02 07:12:30.264 +03:00 [INF] Now listening on: http://localhost:5098
+2025-10-02 07:12:30.504 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-02 07:12:30.507 +03:00 [INF] Hosting environment: Development
+2025-10-02 07:12:30.510 +03:00 [INF] Content root path: C:\Users\acagr\source\repos\azmick\candidate-task\AddressesAPI
+2025-10-02 07:14:37.186 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2025-10-02 07:14:37.187 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-02 07:14:37.297 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16509 application/javascript; charset=utf-8 123.1384ms
+2025-10-02 07:14:37.358 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 193.2174ms
+2025-10-02 07:14:37.443 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - null null
+2025-10-02 07:14:37.551 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 108.2311ms
+2025-10-02 07:14:44.939 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/Addresses - null null
+2025-10-02 07:14:44.978 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-02 07:14:45.021 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-02 07:14:45.449 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-10-02 07:14:45.458 +03:00 [INF] GetAddresses endpoint called.
+2025-10-02 07:14:48.877 +03:00 [INF] Executed DbCommand (63ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-02 07:14:49.072 +03:00 [INF] GetAddresses succeeded. 2 addresses returned.
+2025-10-02 07:14:49.090 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-02 07:14:49.114 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 4082.6221ms
+2025-10-02 07:14:49.119 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-02 07:14:49.133 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/Addresses - 200 null application/json; charset=utf-8 4194.4459ms

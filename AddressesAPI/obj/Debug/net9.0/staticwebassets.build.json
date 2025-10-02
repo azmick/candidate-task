@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "YTctIxvWk4QYudxYOy1sQP+V+5vSBECU1wBrvvrwIoU=",
+  "Source": "AddressesAPI",
+  "BasePath": "_content/AddressesAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

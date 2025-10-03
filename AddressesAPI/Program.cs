@@ -15,6 +15,15 @@ Log.Logger = new LoggerConfiguration()
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Host.UseSerilog();
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(policy =>
+    {
+        policy.WithOrigins("http://localhost:3000")
+        .AllowAnyHeader()
+        .AllowAnyMethod();
+    });
+});
 
 builder.Services.AddDbContext<AppDbContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
@@ -32,6 +41,7 @@ builder.Services.AddSwaggerGen(c => // Added Swagger configuration
 
 var app = builder.Build();
 
+app.UseCors();
 app.UseHttpsRedirection();
 app.UseSwagger();
 app.UseSwaggerUI();

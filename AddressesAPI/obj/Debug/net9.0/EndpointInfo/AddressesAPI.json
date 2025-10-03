@@ -176,6 +176,10 @@
       "AddressDto": {
         "type": "object",
         "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
           "region": {
             "type": "string",
             "nullable": true

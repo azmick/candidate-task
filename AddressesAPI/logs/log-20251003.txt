@@ -1,0 +1,885 @@
+2025-10-03 13:42:19.060 +03:00 [INF] Now listening on: https://localhost:7221
+2025-10-03 13:42:19.105 +03:00 [INF] Now listening on: http://localhost:5098
+2025-10-03 13:42:19.191 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-03 13:42:19.194 +03:00 [INF] Hosting environment: Development
+2025-10-03 13:42:19.195 +03:00 [INF] Content root path: C:\Users\acagr\source\repos\azmick\candidate-task\AddressesAPI
+2025-10-03 13:43:12.023 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-03 13:43:12.106 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 13:43:12.167 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 13:43:12.476 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-10-03 13:43:12.482 +03:00 [INF] GetAddresses endpoint called.
+2025-10-03 13:43:15.147 +03:00 [INF] Executed DbCommand (44ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-03 13:43:15.297 +03:00 [INF] GetAddresses succeeded. 16 addresses returned.
+2025-10-03 13:43:15.315 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 13:43:15.338 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 3162.8485ms
+2025-10-03 13:43:15.344 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 13:43:15.344 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-03 13:43:15.401 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 13:43:15.403 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 13:43:15.408 +03:00 [INF] GetAddresses endpoint called.
+2025-10-03 13:43:15.409 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 200 null application/json; charset=utf-8 3393.7692ms
+2025-10-03 13:43:15.494 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-03 13:43:15.506 +03:00 [INF] GetAddresses succeeded. 16 addresses returned.
+2025-10-03 13:43:15.509 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 13:43:15.518 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 109.7693ms
+2025-10-03 13:43:15.522 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 13:43:15.524 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-03 13:43:15.526 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 200 null application/json; charset=utf-8 181.5618ms
+2025-10-03 13:43:15.536 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 13:43:15.543 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 13:43:15.553 +03:00 [INF] GetAddresses endpoint called.
+2025-10-03 13:43:15.630 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-03 13:43:15.634 +03:00 [INF] GetAddresses succeeded. 16 addresses returned.
+2025-10-03 13:43:15.636 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 13:43:15.639 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 91.7671ms
+2025-10-03 13:43:15.643 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 13:43:15.646 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 200 null application/json; charset=utf-8 121.7739ms
+2025-10-03 13:46:10.680 +03:00 [INF] Now listening on: https://localhost:7221
+2025-10-03 13:46:10.713 +03:00 [INF] Now listening on: http://localhost:5098
+2025-10-03 13:46:10.792 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-03 13:46:10.794 +03:00 [INF] Hosting environment: Development
+2025-10-03 13:46:10.796 +03:00 [INF] Content root path: C:\Users\acagr\source\repos\azmick\candidate-task\AddressesAPI
+2025-10-03 13:46:37.670 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-03 13:46:37.727 +03:00 [INF] CORS policy execution successful.
+2025-10-03 13:46:37.742 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 13:46:37.760 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 13:46:37.975 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-10-03 13:46:37.980 +03:00 [INF] GetAddresses endpoint called.
+2025-10-03 13:46:39.309 +03:00 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-03 13:46:39.402 +03:00 [INF] GetAddresses succeeded. 16 addresses returned.
+2025-10-03 13:46:39.411 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 13:46:39.425 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 1660.0188ms
+2025-10-03 13:46:39.428 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-03 13:46:39.430 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 13:46:39.472 +03:00 [INF] CORS policy execution successful.
+2025-10-03 13:46:39.475 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 13:46:39.478 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 13:46:39.482 +03:00 [INF] GetAddresses endpoint called.
+2025-10-03 13:46:39.484 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 200 null application/json; charset=utf-8 1826.8289ms
+2025-10-03 13:46:39.625 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-03 13:46:39.630 +03:00 [INF] GetAddresses succeeded. 16 addresses returned.
+2025-10-03 13:46:39.632 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 13:46:39.634 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 153.2004ms
+2025-10-03 13:46:39.636 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 13:46:39.638 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 200 null application/json; charset=utf-8 210.0872ms
+2025-10-03 17:21:53.812 +03:00 [INF] Now listening on: https://localhost:7221
+2025-10-03 17:21:53.903 +03:00 [INF] Now listening on: http://localhost:5098
+2025-10-03 17:21:54.117 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-03 17:21:54.120 +03:00 [INF] Hosting environment: Development
+2025-10-03 17:21:54.122 +03:00 [INF] Content root path: C:\Users\acagr\source\repos\azmick\candidate-task\AddressesAPI
+2025-10-03 17:22:14.964 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-03 17:22:15.082 +03:00 [INF] CORS policy execution successful.
+2025-10-03 17:22:15.113 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 17:22:15.157 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 17:22:15.630 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-10-03 17:22:15.638 +03:00 [INF] GetAddresses endpoint called.
+2025-10-03 17:22:19.860 +03:00 [INF] Executed DbCommand (596ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-03 17:22:20.048 +03:00 [INF] GetAddresses succeeded. 16 addresses returned.
+2025-10-03 17:22:20.068 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 17:22:20.097 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 4928.9922ms
+2025-10-03 17:22:20.105 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-03 17:22:20.109 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 17:22:20.116 +03:00 [INF] CORS policy execution successful.
+2025-10-03 17:22:20.121 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 17:22:20.134 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 17:22:20.142 +03:00 [INF] GetAddresses endpoint called.
+2025-10-03 17:22:20.166 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 200 null application/json; charset=utf-8 5213.4533ms
+2025-10-03 17:22:20.177 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-03 17:22:20.192 +03:00 [INF] GetAddresses succeeded. 16 addresses returned.
+2025-10-03 17:22:20.197 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 17:22:20.202 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 61.9859ms
+2025-10-03 17:22:20.207 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 17:22:20.213 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 200 null application/json; charset=utf-8 108.1147ms
+2025-10-03 17:27:07.379 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-03 17:27:07.411 +03:00 [INF] CORS policy execution successful.
+2025-10-03 17:27:07.424 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 17:27:07.427 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 17:27:07.451 +03:00 [INF] GetAddresses endpoint called.
+2025-10-03 17:27:07.586 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-03 17:27:07.619 +03:00 [INF] GetAddresses succeeded. 16 addresses returned.
+2025-10-03 17:27:07.623 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 17:27:07.629 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 193.9688ms
+2025-10-03 17:27:07.632 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-03 17:27:07.633 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 17:27:07.651 +03:00 [INF] CORS policy execution successful.
+2025-10-03 17:27:07.653 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 200 null application/json; charset=utf-8 275.5517ms
+2025-10-03 17:27:07.656 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 17:27:07.669 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 17:27:07.676 +03:00 [INF] GetAddresses endpoint called.
+2025-10-03 17:27:07.681 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-03 17:27:07.689 +03:00 [INF] GetAddresses succeeded. 16 addresses returned.
+2025-10-03 17:27:07.693 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 17:27:07.702 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 26.9489ms
+2025-10-03 17:27:07.709 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 17:27:07.714 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 200 null application/json; charset=utf-8 82.1301ms
+2025-10-03 17:30:45.423 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-03 17:30:45.457 +03:00 [INF] CORS policy execution successful.
+2025-10-03 17:30:45.460 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 17:30:45.464 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 17:30:45.475 +03:00 [INF] GetAddresses endpoint called.
+2025-10-03 17:30:45.486 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-03 17:30:45.500 +03:00 [INF] GetAddresses succeeded. 16 addresses returned.
+2025-10-03 17:30:45.504 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 17:30:45.510 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 36.0307ms
+2025-10-03 17:30:45.516 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-03 17:30:45.566 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 17:30:45.575 +03:00 [INF] CORS policy execution successful.
+2025-10-03 17:30:45.580 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 200 null application/json; charset=utf-8 156.7622ms
+2025-10-03 17:30:45.585 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 17:30:45.604 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 17:30:45.615 +03:00 [INF] GetAddresses endpoint called.
+2025-10-03 17:30:45.621 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-03 17:30:45.632 +03:00 [INF] GetAddresses succeeded. 16 addresses returned.
+2025-10-03 17:30:45.642 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 17:30:45.649 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 34.7492ms
+2025-10-03 17:30:45.655 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 17:30:45.658 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 200 null application/json; charset=utf-8 142.3697ms
+2025-10-03 17:35:55.816 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-03 17:35:55.826 +03:00 [INF] CORS policy execution successful.
+2025-10-03 17:35:55.830 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 17:35:55.833 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 17:35:55.843 +03:00 [INF] GetAddresses endpoint called.
+2025-10-03 17:35:56.097 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-03 17:35:56.105 +03:00 [INF] GetAddresses succeeded. 16 addresses returned.
+2025-10-03 17:35:56.108 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 17:35:56.114 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 271.227ms
+2025-10-03 17:35:56.116 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-03 17:35:56.118 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 17:35:56.131 +03:00 [INF] CORS policy execution successful.
+2025-10-03 17:35:56.134 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 200 null application/json; charset=utf-8 317.8356ms
+2025-10-03 17:35:56.138 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 17:35:56.149 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 17:35:56.157 +03:00 [INF] GetAddresses endpoint called.
+2025-10-03 17:35:56.162 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-03 17:35:56.170 +03:00 [INF] GetAddresses succeeded. 16 addresses returned.
+2025-10-03 17:35:56.172 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 17:35:56.176 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 19.4377ms
+2025-10-03 17:35:56.180 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 17:35:56.185 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 200 null application/json; charset=utf-8 68.4514ms
+2025-10-03 17:39:53.293 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-03 17:39:53.335 +03:00 [INF] CORS policy execution successful.
+2025-10-03 17:39:53.338 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 17:39:53.341 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 17:39:53.348 +03:00 [INF] GetAddresses endpoint called.
+2025-10-03 17:39:53.354 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-03 17:39:53.361 +03:00 [INF] GetAddresses succeeded. 16 addresses returned.
+2025-10-03 17:39:53.366 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 17:39:53.371 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 23.1679ms
+2025-10-03 17:39:53.382 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-03 17:39:53.383 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 17:39:53.390 +03:00 [INF] CORS policy execution successful.
+2025-10-03 17:39:53.392 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 200 null application/json; charset=utf-8 100.2354ms
+2025-10-03 17:39:53.395 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 17:39:53.407 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 17:39:53.413 +03:00 [INF] GetAddresses endpoint called.
+2025-10-03 17:39:53.418 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-03 17:39:53.423 +03:00 [INF] GetAddresses succeeded. 16 addresses returned.
+2025-10-03 17:39:53.426 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 17:39:53.430 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 16.7766ms
+2025-10-03 17:39:53.434 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 17:39:53.438 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 200 null application/json; charset=utf-8 56.5279ms
+2025-10-03 18:03:55.165 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-03 18:03:55.180 +03:00 [INF] CORS policy execution successful.
+2025-10-03 18:03:55.183 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:03:55.186 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 18:03:55.192 +03:00 [INF] GetAddresses endpoint called.
+2025-10-03 18:03:56.513 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-03 18:03:56.521 +03:00 [INF] GetAddresses succeeded. 16 addresses returned.
+2025-10-03 18:03:56.525 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 18:03:56.529 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 1337.4685ms
+2025-10-03 18:03:56.534 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:03:56.537 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 200 null application/json; charset=utf-8 1372.3208ms
+2025-10-03 18:09:26.226 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-03 18:09:26.249 +03:00 [INF] CORS policy execution successful.
+2025-10-03 18:09:26.253 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:09:26.258 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 18:09:26.270 +03:00 [INF] GetAddresses endpoint called.
+2025-10-03 18:09:26.283 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-03 18:09:26.294 +03:00 [INF] GetAddresses succeeded. 16 addresses returned.
+2025-10-03 18:09:26.299 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 18:09:26.307 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 39.835ms
+2025-10-03 18:09:26.310 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-03 18:09:26.313 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:09:26.330 +03:00 [INF] CORS policy execution successful.
+2025-10-03 18:09:26.336 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 200 null application/json; charset=utf-8 109.7564ms
+2025-10-03 18:09:26.341 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:09:26.357 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 18:09:26.366 +03:00 [INF] GetAddresses endpoint called.
+2025-10-03 18:09:26.373 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-03 18:09:26.382 +03:00 [INF] GetAddresses succeeded. 16 addresses returned.
+2025-10-03 18:09:26.390 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 18:09:26.412 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 46.356ms
+2025-10-03 18:09:26.422 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:09:26.428 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 200 null application/json; charset=utf-8 117.8742ms
+2025-10-03 18:14:51.361 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/addresses/undefined - null null
+2025-10-03 18:14:51.369 +03:00 [INF] CORS policy execution successful.
+2025-10-03 18:14:51.375 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/addresses/undefined - 204 null null 14.4567ms
+2025-10-03 18:14:51.381 +03:00 [INF] Request starting HTTP/2 DELETE https://localhost:7221/api/addresses/undefined - null null
+2025-10-03 18:14:51.395 +03:00 [INF] CORS policy execution successful.
+2025-10-03 18:14:51.397 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.DeleteAddress (AddressesAPI)'
+2025-10-03 18:14:51.425 +03:00 [INF] Route matched with {action = "DeleteAddress", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteAddress(Int32) on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 18:14:51.575 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-10-03 18:14:51.631 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.DeleteAddress (AddressesAPI) in 198.3327ms
+2025-10-03 18:14:51.636 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.DeleteAddress (AddressesAPI)'
+2025-10-03 18:14:51.640 +03:00 [INF] Request finished HTTP/2 DELETE https://localhost:7221/api/addresses/undefined - 400 null application/problem+json; charset=utf-8 259.056ms
+2025-10-03 18:15:19.371 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/addresses/undefined - null null
+2025-10-03 18:15:19.381 +03:00 [INF] CORS policy execution successful.
+2025-10-03 18:15:19.385 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/addresses/undefined - 204 null null 27.1508ms
+2025-10-03 18:15:19.392 +03:00 [INF] Request starting HTTP/2 DELETE https://localhost:7221/api/addresses/undefined - null null
+2025-10-03 18:15:19.417 +03:00 [INF] CORS policy execution successful.
+2025-10-03 18:15:19.420 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.DeleteAddress (AddressesAPI)'
+2025-10-03 18:15:19.428 +03:00 [INF] Route matched with {action = "DeleteAddress", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteAddress(Int32) on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 18:15:19.443 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-10-03 18:15:19.450 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.DeleteAddress (AddressesAPI) in 9.3698ms
+2025-10-03 18:15:19.455 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.DeleteAddress (AddressesAPI)'
+2025-10-03 18:15:19.461 +03:00 [INF] Request finished HTTP/2 DELETE https://localhost:7221/api/addresses/undefined - 400 null application/problem+json; charset=utf-8 68.7244ms
+2025-10-03 18:16:33.557 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/addresses/undefined - null null
+2025-10-03 18:16:33.577 +03:00 [INF] CORS policy execution successful.
+2025-10-03 18:16:33.581 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/addresses/undefined - 204 null null 23.7692ms
+2025-10-03 18:16:33.590 +03:00 [INF] Request starting HTTP/2 DELETE https://localhost:7221/api/addresses/undefined - null null
+2025-10-03 18:16:33.612 +03:00 [INF] CORS policy execution successful.
+2025-10-03 18:16:33.619 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.DeleteAddress (AddressesAPI)'
+2025-10-03 18:16:33.624 +03:00 [INF] Route matched with {action = "DeleteAddress", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteAddress(Int32) on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 18:16:33.634 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-10-03 18:16:33.641 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.DeleteAddress (AddressesAPI) in 9.494ms
+2025-10-03 18:16:33.646 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.DeleteAddress (AddressesAPI)'
+2025-10-03 18:16:33.652 +03:00 [INF] Request finished HTTP/2 DELETE https://localhost:7221/api/addresses/undefined - 400 null application/problem+json; charset=utf-8 61.3167ms
+2025-10-03 18:17:13.110 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/addresses/[object Object] - null null
+2025-10-03 18:17:13.119 +03:00 [INF] CORS policy execution successful.
+2025-10-03 18:17:13.122 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/addresses/[object Object] - 204 null null 30.554ms
+2025-10-03 18:17:13.129 +03:00 [INF] Request starting HTTP/2 DELETE https://localhost:7221/api/addresses/[object Object] - null null
+2025-10-03 18:17:13.141 +03:00 [INF] CORS policy execution successful.
+2025-10-03 18:17:13.147 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.DeleteAddress (AddressesAPI)'
+2025-10-03 18:17:13.151 +03:00 [INF] Route matched with {action = "DeleteAddress", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteAddress(Int32) on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 18:17:13.166 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-10-03 18:17:13.172 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.DeleteAddress (AddressesAPI) in 7.4965ms
+2025-10-03 18:17:13.180 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.DeleteAddress (AddressesAPI)'
+2025-10-03 18:17:13.189 +03:00 [INF] Request finished HTTP/2 DELETE https://localhost:7221/api/addresses/[object Object] - 400 null application/problem+json; charset=utf-8 59.491ms
+2025-10-03 18:19:13.778 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-03 18:19:13.793 +03:00 [INF] CORS policy execution successful.
+2025-10-03 18:19:13.797 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:19:13.801 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 18:19:13.809 +03:00 [INF] GetAddresses endpoint called.
+2025-10-03 18:19:15.339 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-03 18:19:15.346 +03:00 [INF] GetAddresses succeeded. 16 addresses returned.
+2025-10-03 18:19:15.349 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 18:19:15.353 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 1544.3034ms
+2025-10-03 18:19:15.364 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-03 18:19:15.366 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:19:15.373 +03:00 [INF] CORS policy execution successful.
+2025-10-03 18:19:15.376 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 200 null application/json; charset=utf-8 1598.6511ms
+2025-10-03 18:19:15.388 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:19:15.400 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 18:19:15.406 +03:00 [INF] GetAddresses endpoint called.
+2025-10-03 18:19:15.410 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-03 18:19:15.418 +03:00 [INF] GetAddresses succeeded. 16 addresses returned.
+2025-10-03 18:19:15.421 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 18:19:15.426 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 20.0784ms
+2025-10-03 18:19:15.430 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:19:15.432 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 200 null application/json; charset=utf-8 68.0671ms
+2025-10-03 18:19:17.869 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-03 18:19:17.878 +03:00 [INF] CORS policy execution successful.
+2025-10-03 18:19:17.881 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:19:17.885 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 18:19:17.892 +03:00 [INF] GetAddresses endpoint called.
+2025-10-03 18:19:17.897 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-03 18:19:17.908 +03:00 [INF] GetAddresses succeeded. 16 addresses returned.
+2025-10-03 18:19:17.912 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 18:19:17.920 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 27.5615ms
+2025-10-03 18:19:17.928 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-03 18:19:17.929 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:19:17.939 +03:00 [INF] CORS policy execution successful.
+2025-10-03 18:19:17.945 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 200 null application/json; charset=utf-8 75.5723ms
+2025-10-03 18:19:17.947 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:19:17.959 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 18:19:17.966 +03:00 [INF] GetAddresses endpoint called.
+2025-10-03 18:19:17.971 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-03 18:19:17.978 +03:00 [INF] GetAddresses succeeded. 16 addresses returned.
+2025-10-03 18:19:17.981 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 18:19:17.986 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 20.3359ms
+2025-10-03 18:19:17.990 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:19:17.994 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 200 null application/json; charset=utf-8 65.8227ms
+2025-10-03 18:19:58.902 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-03 18:19:58.931 +03:00 [INF] CORS policy execution successful.
+2025-10-03 18:19:58.938 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:19:58.943 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 18:19:58.967 +03:00 [INF] GetAddresses endpoint called.
+2025-10-03 18:19:58.974 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-03 18:19:58.988 +03:00 [INF] GetAddresses succeeded. 16 addresses returned.
+2025-10-03 18:19:58.994 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 18:19:59.005 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 39.447ms
+2025-10-03 18:19:59.011 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:19:59.014 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-03 18:19:59.017 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 200 null application/json; charset=utf-8 121.7267ms
+2025-10-03 18:19:59.042 +03:00 [INF] CORS policy execution successful.
+2025-10-03 18:19:59.059 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:19:59.062 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 18:19:59.069 +03:00 [INF] GetAddresses endpoint called.
+2025-10-03 18:19:59.076 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-03 18:19:59.085 +03:00 [INF] GetAddresses succeeded. 16 addresses returned.
+2025-10-03 18:19:59.095 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 18:19:59.106 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 37.2308ms
+2025-10-03 18:19:59.113 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:19:59.116 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 200 null application/json; charset=utf-8 102.5386ms
+2025-10-03 18:27:04.694 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-03 18:27:04.714 +03:00 [INF] CORS policy execution successful.
+2025-10-03 18:27:04.718 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:27:04.731 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 18:27:04.738 +03:00 [INF] GetAddresses endpoint called.
+2025-10-03 18:27:04.912 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-03 18:27:04.928 +03:00 [INF] GetAddresses succeeded. 16 addresses returned.
+2025-10-03 18:27:04.932 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 18:27:04.969 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 231.8196ms
+2025-10-03 18:27:04.970 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-03 18:27:04.973 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:27:04.993 +03:00 [INF] CORS policy execution successful.
+2025-10-03 18:27:04.997 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 200 null application/json; charset=utf-8 303.2156ms
+2025-10-03 18:27:05.001 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:27:05.023 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 18:27:05.029 +03:00 [INF] GetAddresses endpoint called.
+2025-10-03 18:27:05.036 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-03 18:27:05.050 +03:00 [INF] GetAddresses succeeded. 16 addresses returned.
+2025-10-03 18:27:05.055 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 18:27:05.069 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 40.5085ms
+2025-10-03 18:27:05.073 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:27:05.078 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 200 null application/json; charset=utf-8 107.3254ms
+2025-10-03 18:27:16.595 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/addresses/0 - null null
+2025-10-03 18:27:16.605 +03:00 [INF] CORS policy execution successful.
+2025-10-03 18:27:16.609 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/addresses/0 - 204 null null 14.2184ms
+2025-10-03 18:27:16.614 +03:00 [INF] Request starting HTTP/2 DELETE https://localhost:7221/api/addresses/0 - null null
+2025-10-03 18:27:16.626 +03:00 [INF] CORS policy execution successful.
+2025-10-03 18:27:16.630 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.DeleteAddress (AddressesAPI)'
+2025-10-03 18:27:16.640 +03:00 [INF] Route matched with {action = "DeleteAddress", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteAddress(Int32) on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 18:27:16.653 +03:00 [INF] DeleteAddress endpoint called for id: 0
+2025-10-03 18:27:16.906 +03:00 [INF] Executed DbCommand (23ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-10-03 18:27:16.919 +03:00 [WRN] DeleteAddress: Address not found for id: 0
+2025-10-03 18:27:16.925 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-10-03 18:27:16.936 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.DeleteAddress (AddressesAPI) in 287.9258ms
+2025-10-03 18:27:16.940 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.DeleteAddress (AddressesAPI)'
+2025-10-03 18:27:16.944 +03:00 [INF] Request finished HTTP/2 DELETE https://localhost:7221/api/addresses/0 - 404 null application/problem+json; charset=utf-8 329.204ms
+2025-10-03 18:44:40.031 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-03 18:45:00.050 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-03 18:45:21.065 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-03 18:46:01.716 +03:00 [INF] CORS policy execution successful.
+2025-10-03 18:46:01.718 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:45:42.116 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - null null
+2025-10-03 18:46:01.704 +03:00 [INF] CORS policy execution successful.
+2025-10-03 18:46:01.711 +03:00 [INF] CORS policy execution successful.
+2025-10-03 18:45:41.080 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-03 18:45:36.450 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger - null null
+2025-10-03 18:46:01.721 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 18:46:01.735 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:46:01.732 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:46:01.764 +03:00 [INF] GetAddresses endpoint called.
+2025-10-03 18:46:01.745 +03:00 [INF] CORS policy execution successful.
+2025-10-03 18:46:01.770 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 18:46:01.774 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 18:46:01.806 +03:00 [INF] GetAddresses endpoint called.
+2025-10-03 18:46:01.800 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-03 18:46:01.815 +03:00 [INF] GetAddresses endpoint called.
+2025-10-03 18:46:01.787 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:46:01.839 +03:00 [INF] Application is shutting down...
+2025-10-03 18:46:01.848 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-03 18:46:01.854 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-03 18:46:01.918 +03:00 [INF] GetAddresses succeeded. 0 addresses returned.
+2025-10-03 18:46:02.006 +03:00 [INF] GetAddresses succeeded. 0 addresses returned.
+2025-10-03 18:46:01.850 +03:00 [INF] GetAddresses succeeded. 0 addresses returned.
+2025-10-03 18:46:01.856 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 18:46:02.018 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 18:46:02.023 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 18:46:02.026 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 18:46:02.033 +03:00 [INF] GetAddresses endpoint called.
+2025-10-03 18:46:02.050 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 244ms
+2025-10-03 18:46:02.051 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 236.2812ms
+2025-10-03 18:46:02.056 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 292.6223ms
+2025-10-03 18:46:02.061 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-03 18:46:02.063 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:46:02.069 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:46:02.073 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:46:02.083 +03:00 [INF] GetAddresses succeeded. 0 addresses returned.
+2025-10-03 18:46:02.086 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 499 null application/json; charset=utf-8 62035.7273ms
+2025-10-03 18:46:02.089 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 499 null application/json; charset=utf-8 82058.7252ms
+2025-10-03 18:46:02.093 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 200 null application/json; charset=utf-8 41027.8881ms
+2025-10-03 18:46:02.099 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 18:46:02.138 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 104.9924ms
+2025-10-03 18:46:02.138 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger - 499 null null 25688.2174ms
+2025-10-03 18:46:02.142 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:46:02.158 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 200 null application/json; charset=utf-8 21077.8199ms
+2025-10-03 18:46:02.280 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - 200 null text/html;charset=utf-8 20163.9587ms
+2025-10-03 18:46:30.354 +03:00 [INF] Now listening on: https://localhost:7221
+2025-10-03 18:46:30.437 +03:00 [INF] Now listening on: http://localhost:5098
+2025-10-03 18:46:30.663 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-03 18:46:30.666 +03:00 [INF] Hosting environment: Development
+2025-10-03 18:46:30.668 +03:00 [INF] Content root path: C:\Users\acagr\source\repos\azmick\candidate-task\AddressesAPI
+2025-10-03 18:46:46.495 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/swagger-ui-bundle.js - null null
+2025-10-03 18:46:46.495 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - null null
+2025-10-03 18:46:46.495 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.js - null null
+2025-10-03 18:46:46.495 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/swagger-ui.css - null null
+2025-10-03 18:46:46.495 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.css - null null
+2025-10-03 18:46:46.495 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/swagger-ui-standalone-preset.js - null null
+2025-10-03 18:46:46.495 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-03 18:46:46.752 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - 200 16509 application/javascript; charset=utf-8 270.8221ms
+2025-10-03 18:46:46.777 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - 200 null text/javascript; charset=UTF-8 297.0751ms
+2025-10-03 18:46:46.794 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.css - 200 152 text/css 315.267ms
+2025-10-03 18:46:46.801 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/swagger-ui.css - 200 23647 text/css 321.9789ms
+2025-10-03 18:46:46.803 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/swagger-ui-standalone-preset.js - 200 77352 text/javascript 323.9787ms
+2025-10-03 18:46:46.808 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/swagger-ui-bundle.js - 200 424765 text/javascript 328.4798ms
+2025-10-03 18:46:46.885 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.js - 200 null application/javascript;charset=utf-8 405.9175ms
+2025-10-03 18:46:47.235 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - null null
+2025-10-03 18:46:47.268 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 32.9177ms
+2025-10-03 18:47:02.918 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7221/api/Addresses/bulk-import - application/json 3155
+2025-10-03 18:47:02.938 +03:00 [INF] CORS policy execution failed.
+2025-10-03 18:47:02.944 +03:00 [INF] Request origin https://localhost:7221 does not have permission to access the resource.
+2025-10-03 18:47:02.953 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.BulkImport (AddressesAPI)'
+2025-10-03 18:47:03.005 +03:00 [INF] Route matched with {action = "BulkImport", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] BulkImport(System.Collections.Generic.List`1[System.String]) on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 18:47:03.467 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-10-03 18:47:05.727 +03:00 [INF] Executed DbCommand (144ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?' (Size = 4000), @p17='?' (Size = 4000), @p18='?' (Size = 4000), @p19='?' (Size = 4000), @p20='?' (Size = 4000), @p21='?' (Size = 4000), @p22='?' (Size = 4000), @p23='?' (Size = 4000), @p24='?' (Size = 4000), @p25='?' (Size = 4000), @p26='?' (Size = 4000), @p27='?' (Size = 4000), @p28='?' (Size = 4000), @p29='?' (Size = 4000), @p30='?' (Size = 4000), @p31='?' (Size = 4000), @p32='?' (Size = 4000), @p33='?' (Size = 4000), @p34='?' (Size = 4000), @p35='?' (Size = 4000), @p36='?' (Size = 4000), @p37='?' (Size = 4000), @p38='?' (Size = 4000), @p39='?' (Size = 4000), @p40='?' (Size = 4000), @p41='?' (Size = 4000), @p42='?' (Size = 4000), @p43='?' (Size = 4000), @p44='?' (Size = 4000), @p45='?' (Size = 4000), @p46='?' (Size = 4000), @p47='?' (Size = 4000), @p48='?' (Size = 4000), @p49='?' (Size = 4000), @p50='?' (Size = 4000), @p51='?' (Size = 4000), @p52='?' (Size = 4000), @p53='?' (Size = 4000), @p54='?' (Size = 4000), @p55='?' (Size = 4000), @p56='?' (Size = 4000), @p57='?' (Size = 4000), @p58='?' (Size = 4000), @p59='?' (Size = 4000), @p60='?' (Size = 4000), @p61='?' (Size = 4000), @p62='?' (Size = 4000), @p63='?' (Size = 4000), @p64='?' (Size = 4000), @p65='?' (Size = 4000), @p66='?' (Size = 4000), @p67='?' (Size = 4000), @p68='?' (Size = 4000), @p69='?' (Size = 4000), @p70='?' (Size = 4000), @p71='?' (Size = 4000), @p72='?' (Size = 4000), @p73='?' (Size = 4000), @p74='?' (Size = 4000), @p75='?' (Size = 4000), @p76='?' (Size = 4000), @p77='?' (Size = 4000), @p78='?' (Size = 4000), @p79='?' (Size = 4000), @p80='?' (Size = 4000), @p81='?' (Size = 4000), @p82='?' (Size = 4000), @p83='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+MERGE [Addresses] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, 0),
+(@p6, @p7, @p8, @p9, @p10, @p11, 1),
+(@p12, @p13, @p14, @p15, @p16, @p17, 2),
+(@p18, @p19, @p20, @p21, @p22, @p23, 3),
+(@p24, @p25, @p26, @p27, @p28, @p29, 4),
+(@p30, @p31, @p32, @p33, @p34, @p35, 5),
+(@p36, @p37, @p38, @p39, @p40, @p41, 6),
+(@p42, @p43, @p44, @p45, @p46, @p47, 7),
+(@p48, @p49, @p50, @p51, @p52, @p53, 8),
+(@p54, @p55, @p56, @p57, @p58, @p59, 9),
+(@p60, @p61, @p62, @p63, @p64, @p65, 10),
+(@p66, @p67, @p68, @p69, @p70, @p71, 11),
+(@p72, @p73, @p74, @p75, @p76, @p77, 12),
+(@p78, @p79, @p80, @p81, @p82, @p83, 13)) AS i ([BranchNumber], [City], [FullAddress], [Phone], [Region], [WorkingHours], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([BranchNumber], [City], [FullAddress], [Phone], [Region], [WorkingHours])
+VALUES (i.[BranchNumber], i.[City], i.[FullAddress], i.[Phone], i.[Region], i.[WorkingHours])
+OUTPUT INSERTED.[Id], i._Position;
+2025-10-03 18:47:05.891 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-10-03 18:47:05.902 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.BulkImport (AddressesAPI) in 2883.5214ms
+2025-10-03 18:47:05.906 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.BulkImport (AddressesAPI)'
+2025-10-03 18:47:05.920 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7221/api/Addresses/bulk-import - 200 null text/plain; charset=utf-8 3002.019ms
+2025-10-03 18:47:41.994 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-03 18:47:42.021 +03:00 [INF] CORS policy execution successful.
+2025-10-03 18:47:42.026 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:47:42.043 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 18:47:42.054 +03:00 [INF] GetAddresses endpoint called.
+2025-10-03 18:47:42.718 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-03 18:47:42.775 +03:00 [INF] GetAddresses succeeded. 14 addresses returned.
+2025-10-03 18:47:42.780 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 18:47:42.794 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 743.2602ms
+2025-10-03 18:47:42.797 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-03 18:47:42.798 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:47:42.806 +03:00 [INF] CORS policy execution successful.
+2025-10-03 18:47:42.811 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 200 null application/json; charset=utf-8 817.7008ms
+2025-10-03 18:47:42.814 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:47:42.831 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 18:47:42.850 +03:00 [INF] GetAddresses endpoint called.
+2025-10-03 18:47:42.888 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-03 18:47:42.912 +03:00 [INF] GetAddresses succeeded. 14 addresses returned.
+2025-10-03 18:47:42.916 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 18:47:42.926 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 85.2927ms
+2025-10-03 18:47:42.934 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:47:42.939 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 200 null application/json; charset=utf-8 142.1151ms
+2025-10-03 18:47:51.381 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/addresses/18 - null null
+2025-10-03 18:47:51.397 +03:00 [INF] CORS policy execution successful.
+2025-10-03 18:47:51.406 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/addresses/18 - 204 null null 25.1771ms
+2025-10-03 18:47:51.420 +03:00 [INF] Request starting HTTP/2 DELETE https://localhost:7221/api/addresses/18 - null null
+2025-10-03 18:47:51.430 +03:00 [INF] CORS policy execution successful.
+2025-10-03 18:47:51.435 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.DeleteAddress (AddressesAPI)'
+2025-10-03 18:47:51.450 +03:00 [INF] Route matched with {action = "DeleteAddress", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteAddress(Int32) on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 18:47:51.467 +03:00 [INF] DeleteAddress endpoint called for id: 18
+2025-10-03 18:47:51.696 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-10-03 18:47:51.733 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Addresses]
+OUTPUT 1
+WHERE [Id] = @p0;
+2025-10-03 18:47:51.753 +03:00 [INF] DeleteAddress succeeded for id: 18
+2025-10-03 18:47:51.764 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-10-03 18:47:51.767 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.DeleteAddress (AddressesAPI) in 309.5426ms
+2025-10-03 18:47:51.775 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.DeleteAddress (AddressesAPI)'
+2025-10-03 18:47:51.779 +03:00 [INF] Request finished HTTP/2 DELETE https://localhost:7221/api/addresses/18 - 204 null null 359.809ms
+2025-10-03 18:48:07.634 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-03 18:48:07.645 +03:00 [INF] CORS policy execution successful.
+2025-10-03 18:48:07.651 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:48:07.657 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 18:48:07.678 +03:00 [INF] GetAddresses endpoint called.
+2025-10-03 18:48:07.687 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-03 18:48:07.702 +03:00 [INF] GetAddresses succeeded. 13 addresses returned.
+2025-10-03 18:48:07.705 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 18:48:07.715 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 37.6991ms
+2025-10-03 18:48:07.719 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-03 18:48:07.719 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:48:07.730 +03:00 [INF] CORS policy execution successful.
+2025-10-03 18:48:07.734 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 200 null application/json; charset=utf-8 99.6853ms
+2025-10-03 18:48:07.740 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:48:07.781 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 18:48:07.798 +03:00 [INF] GetAddresses endpoint called.
+2025-10-03 18:48:07.804 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-03 18:48:07.814 +03:00 [INF] GetAddresses succeeded. 13 addresses returned.
+2025-10-03 18:48:07.818 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 18:48:07.828 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 30.5933ms
+2025-10-03 18:48:07.831 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:48:07.840 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 200 null application/json; charset=utf-8 121.3834ms
+2025-10-03 18:50:49.583 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-03 18:50:49.602 +03:00 [INF] CORS policy execution successful.
+2025-10-03 18:50:49.606 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:50:49.612 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 18:50:49.628 +03:00 [INF] GetAddresses endpoint called.
+2025-10-03 18:50:49.637 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-03 18:50:49.648 +03:00 [INF] GetAddresses succeeded. 13 addresses returned.
+2025-10-03 18:50:49.652 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 18:50:49.657 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 30.3484ms
+2025-10-03 18:50:49.660 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-03 18:50:49.668 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:50:49.682 +03:00 [INF] CORS policy execution successful.
+2025-10-03 18:50:49.686 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 200 null application/json; charset=utf-8 102.7022ms
+2025-10-03 18:50:49.688 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:50:49.704 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 18:50:49.719 +03:00 [INF] GetAddresses endpoint called.
+2025-10-03 18:50:49.726 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-03 18:50:49.735 +03:00 [INF] GetAddresses succeeded. 13 addresses returned.
+2025-10-03 18:50:49.740 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 18:50:49.746 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 27.8557ms
+2025-10-03 18:50:49.751 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:50:49.757 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 200 null application/json; charset=utf-8 97.1844ms
+2025-10-03 18:56:03.946 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-03 18:56:03.964 +03:00 [INF] CORS policy execution successful.
+2025-10-03 18:56:03.972 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:56:03.975 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 18:56:03.991 +03:00 [INF] GetAddresses endpoint called.
+2025-10-03 18:56:04.000 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-03 18:56:04.014 +03:00 [INF] GetAddresses succeeded. 13 addresses returned.
+2025-10-03 18:56:04.020 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 18:56:04.029 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 38.2152ms
+2025-10-03 18:56:04.032 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-03 18:56:04.044 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:56:04.053 +03:00 [INF] CORS policy execution successful.
+2025-10-03 18:56:04.060 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 200 null application/json; charset=utf-8 113.8383ms
+2025-10-03 18:56:04.063 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:56:04.081 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 18:56:04.095 +03:00 [INF] GetAddresses endpoint called.
+2025-10-03 18:56:04.102 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-03 18:56:04.113 +03:00 [INF] GetAddresses succeeded. 13 addresses returned.
+2025-10-03 18:56:04.116 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 18:56:04.125 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 30.9135ms
+2025-10-03 18:56:04.129 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:56:04.137 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 200 null application/json; charset=utf-8 104.8484ms
+2025-10-03 18:56:22.723 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-03 18:56:22.742 +03:00 [INF] CORS policy execution successful.
+2025-10-03 18:56:22.755 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:56:22.762 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 18:56:22.781 +03:00 [INF] GetAddresses endpoint called.
+2025-10-03 18:56:22.792 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-03 18:56:22.802 +03:00 [INF] GetAddresses succeeded. 13 addresses returned.
+2025-10-03 18:56:22.806 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 18:56:22.815 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 34.1921ms
+2025-10-03 18:56:22.820 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:56:22.827 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 200 null application/json; charset=utf-8 103.0882ms
+2025-10-03 18:56:23.307 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-03 18:56:23.313 +03:00 [INF] CORS policy execution successful.
+2025-10-03 18:56:23.315 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:56:23.318 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 18:56:23.330 +03:00 [INF] GetAddresses endpoint called.
+2025-10-03 18:56:23.334 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-03 18:56:23.345 +03:00 [INF] GetAddresses succeeded. 13 addresses returned.
+2025-10-03 18:56:23.348 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 18:56:23.356 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 27.0022ms
+2025-10-03 18:56:23.361 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:56:23.367 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 200 null application/json; charset=utf-8 60.6437ms
+2025-10-03 18:56:28.944 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-03 18:56:28.953 +03:00 [INF] CORS policy execution successful.
+2025-10-03 18:56:28.959 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:56:28.964 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 18:56:28.976 +03:00 [INF] GetAddresses endpoint called.
+2025-10-03 18:56:28.983 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-03 18:56:29.001 +03:00 [INF] GetAddresses succeeded. 13 addresses returned.
+2025-10-03 18:56:29.009 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 18:56:29.016 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 40.7588ms
+2025-10-03 18:56:29.024 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:56:29.031 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 200 null application/json; charset=utf-8 86.5187ms
+2025-10-03 18:56:29.537 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-03 18:56:29.549 +03:00 [INF] CORS policy execution successful.
+2025-10-03 18:56:29.554 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:56:29.558 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 18:56:29.571 +03:00 [INF] GetAddresses endpoint called.
+2025-10-03 18:56:29.578 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-03 18:56:29.588 +03:00 [INF] GetAddresses succeeded. 13 addresses returned.
+2025-10-03 18:56:29.592 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 18:56:29.601 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 29.8765ms
+2025-10-03 18:56:29.605 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:56:29.613 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 200 null application/json; charset=utf-8 76.1197ms
+2025-10-03 18:56:40.829 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-03 18:56:40.840 +03:00 [INF] CORS policy execution successful.
+2025-10-03 18:56:40.845 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:56:40.852 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 18:56:40.866 +03:00 [INF] GetAddresses endpoint called.
+2025-10-03 18:56:40.872 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-03 18:56:40.890 +03:00 [INF] GetAddresses succeeded. 13 addresses returned.
+2025-10-03 18:56:40.899 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 18:56:40.908 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 42.1718ms
+2025-10-03 18:56:40.918 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:56:40.925 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 200 null application/json; charset=utf-8 96.4543ms
+2025-10-03 18:56:42.853 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-03 18:56:42.861 +03:00 [INF] CORS policy execution successful.
+2025-10-03 18:56:42.863 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:56:42.867 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 18:56:42.876 +03:00 [INF] GetAddresses endpoint called.
+2025-10-03 18:56:42.881 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-03 18:56:42.892 +03:00 [INF] GetAddresses succeeded. 13 addresses returned.
+2025-10-03 18:56:42.895 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 18:56:42.903 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 27.1392ms
+2025-10-03 18:56:42.906 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:56:42.909 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 200 null application/json; charset=utf-8 56.2251ms
+2025-10-03 18:58:15.025 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-03 18:58:15.034 +03:00 [INF] CORS policy execution successful.
+2025-10-03 18:58:15.039 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:58:15.042 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 18:58:15.054 +03:00 [INF] GetAddresses endpoint called.
+2025-10-03 18:58:15.060 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-03 18:58:15.072 +03:00 [INF] GetAddresses succeeded. 13 addresses returned.
+2025-10-03 18:58:15.076 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 18:58:15.086 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 32.674ms
+2025-10-03 18:58:15.091 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:58:15.097 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 200 null application/json; charset=utf-8 72.0091ms
+2025-10-03 18:58:17.062 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-03 18:58:17.069 +03:00 [INF] CORS policy execution successful.
+2025-10-03 18:58:17.072 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:58:17.076 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 18:58:17.087 +03:00 [INF] GetAddresses endpoint called.
+2025-10-03 18:58:17.092 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-03 18:58:17.102 +03:00 [INF] GetAddresses succeeded. 13 addresses returned.
+2025-10-03 18:58:17.105 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 18:58:17.112 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 25.3006ms
+2025-10-03 18:58:17.117 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:58:17.121 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 200 null application/json; charset=utf-8 58.4052ms
+2025-10-03 18:58:24.992 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-03 18:58:25.013 +03:00 [INF] CORS policy execution successful.
+2025-10-03 18:58:25.019 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:58:25.026 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 18:58:25.040 +03:00 [INF] GetAddresses endpoint called.
+2025-10-03 18:58:25.064 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-03 18:58:25.076 +03:00 [INF] GetAddresses succeeded. 13 addresses returned.
+2025-10-03 18:58:25.083 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 18:58:25.089 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 49.4599ms
+2025-10-03 18:58:25.097 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:58:25.102 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 200 null application/json; charset=utf-8 109.5188ms
+2025-10-03 18:58:27.017 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-03 18:58:27.021 +03:00 [INF] CORS policy execution successful.
+2025-10-03 18:58:27.022 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:58:27.024 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 18:58:27.029 +03:00 [INF] GetAddresses endpoint called.
+2025-10-03 18:58:27.031 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-03 18:58:27.038 +03:00 [INF] GetAddresses succeeded. 13 addresses returned.
+2025-10-03 18:58:27.039 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 18:58:27.043 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 14.5322ms
+2025-10-03 18:58:27.045 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 18:58:27.047 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 200 null application/json; charset=utf-8 29.8131ms
+2025-10-03 19:04:31.793 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-03 19:04:31.816 +03:00 [INF] CORS policy execution successful.
+2025-10-03 19:04:31.820 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 19:04:31.826 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 19:04:31.839 +03:00 [INF] GetAddresses endpoint called.
+2025-10-03 19:04:31.892 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-03 19:04:31.901 +03:00 [INF] GetAddresses succeeded. 13 addresses returned.
+2025-10-03 19:04:31.906 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 19:04:31.912 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 74.1214ms
+2025-10-03 19:04:31.918 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 19:04:31.925 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 200 null application/json; charset=utf-8 131.9898ms
+2025-10-03 19:04:33.814 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-03 19:04:33.821 +03:00 [INF] CORS policy execution successful.
+2025-10-03 19:04:33.824 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 19:04:33.827 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 19:04:33.836 +03:00 [INF] GetAddresses endpoint called.
+2025-10-03 19:04:33.840 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-03 19:04:33.850 +03:00 [INF] GetAddresses succeeded. 13 addresses returned.
+2025-10-03 19:04:33.853 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 19:04:33.861 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 25.8882ms
+2025-10-03 19:04:33.867 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 19:04:33.871 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 200 null application/json; charset=utf-8 57.0382ms
+2025-10-03 19:08:26.035 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-03 19:08:26.053 +03:00 [INF] CORS policy execution successful.
+2025-10-03 19:08:26.055 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 19:08:26.062 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 19:08:26.070 +03:00 [INF] GetAddresses endpoint called.
+2025-10-03 19:08:26.080 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-03 19:08:26.093 +03:00 [INF] GetAddresses succeeded. 13 addresses returned.
+2025-10-03 19:08:26.096 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 19:08:26.108 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 38.553ms
+2025-10-03 19:08:26.113 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-03 19:08:26.130 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 19:08:26.140 +03:00 [INF] CORS policy execution successful.
+2025-10-03 19:08:26.144 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 200 null application/json; charset=utf-8 109.5662ms
+2025-10-03 19:08:26.147 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 19:08:26.166 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 19:08:26.176 +03:00 [INF] GetAddresses endpoint called.
+2025-10-03 19:08:26.183 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-03 19:08:26.191 +03:00 [INF] GetAddresses succeeded. 13 addresses returned.
+2025-10-03 19:08:26.196 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 19:08:26.201 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 26.2658ms
+2025-10-03 19:08:26.205 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 19:08:26.209 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 200 null application/json; charset=utf-8 95.3118ms
+2025-10-03 19:09:30.494 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-03 19:09:30.505 +03:00 [INF] CORS policy execution successful.
+2025-10-03 19:09:30.508 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 19:09:30.513 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 19:09:30.525 +03:00 [INF] GetAddresses endpoint called.
+2025-10-03 19:09:30.532 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-03 19:09:30.541 +03:00 [INF] GetAddresses succeeded. 13 addresses returned.
+2025-10-03 19:09:30.545 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 19:09:30.557 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 33.0034ms
+2025-10-03 19:09:30.595 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-03 19:09:30.598 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 19:09:30.604 +03:00 [INF] CORS policy execution successful.
+2025-10-03 19:09:30.613 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 200 null application/json; charset=utf-8 119.8525ms
+2025-10-03 19:09:30.634 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 19:09:30.658 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 19:09:30.673 +03:00 [INF] GetAddresses endpoint called.
+2025-10-03 19:09:30.683 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-03 19:09:30.727 +03:00 [INF] GetAddresses succeeded. 13 addresses returned.
+2025-10-03 19:09:30.739 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 19:09:30.762 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 90.2373ms
+2025-10-03 19:09:30.787 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 19:09:30.797 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 200 null application/json; charset=utf-8 201.6887ms
+2025-10-03 19:16:31.108 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-03 19:16:31.130 +03:00 [INF] CORS policy execution successful.
+2025-10-03 19:16:31.133 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 19:16:31.139 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 19:16:31.160 +03:00 [INF] GetAddresses endpoint called.
+2025-10-03 19:16:31.218 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-03 19:16:31.235 +03:00 [INF] GetAddresses succeeded. 13 addresses returned.
+2025-10-03 19:16:31.238 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 19:16:31.248 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 89.337ms
+2025-10-03 19:16:31.256 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 19:16:31.256 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7221/api/addresses - null null
+2025-10-03 19:16:31.291 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 200 null application/json; charset=utf-8 183.016ms
+2025-10-03 19:16:31.374 +03:00 [INF] CORS policy execution successful.
+2025-10-03 19:16:31.390 +03:00 [INF] Executing endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 19:16:31.394 +03:00 [INF] Route matched with {action = "GetAddresses", controller = "Addresses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAddresses() on controller AddressesAPI.Controllers.AddressesController (AddressesAPI).
+2025-10-03 19:16:31.406 +03:00 [INF] GetAddresses endpoint called.
+2025-10-03 19:16:31.412 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BranchNumber], [a].[City], [a].[FullAddress], [a].[Phone], [a].[Region], [a].[WorkingHours]
+FROM [Addresses] AS [a]
+2025-10-03 19:16:31.423 +03:00 [INF] GetAddresses succeeded. 13 addresses returned.
+2025-10-03 19:16:31.430 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AddressesAPI.DTOs.AddressDto, AddressesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-03 19:16:31.439 +03:00 [INF] Executed action AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI) in 33.2333ms
+2025-10-03 19:16:31.446 +03:00 [INF] Executed endpoint 'AddressesAPI.Controllers.AddressesController.GetAddresses (AddressesAPI)'
+2025-10-03 19:16:31.451 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7221/api/addresses - 200 null application/json; charset=utf-8 195.194ms

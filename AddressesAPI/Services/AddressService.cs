@@ -77,23 +77,40 @@ public class AddressService : IAddressService
     }
     private Address ParseAddress(string input)
     {
-        // "Запорізька обл., Запоріжжя, Відділення №16 (до 30 кг на одне місце): просп. Леніна, 84, +380974805040, пн-ср 08:00-15:00, сб-нд 10:00-12:00"
-        var parts = input.Split(':', 2);
-        if (parts.Length < 2) throw new FormatException("Geçersiz format");
+        // Örnek: "Запорізька обл., Запоріжжя, Відділення №16 (до 30 кг на одне місце): просп. Леніна, 84, +380974805040, пн-ср 08:00-15:00, сб-нд 10:00-12:00"
+        // veya:  "Київська обл., Київ, Поштомат InPost 24/7, №2029: пр-т Повітрофлотський, 56а (цілодобовий поштомат біля маг.\"Billa\"), +380974803040, пн-ср 08:00-15:00, сб-нд 10:00-20:00"
 
-        var left = parts[0].Split(',');
-        var right = parts[1].Split(',');
+        // 1. Bölge ve şehir
+        var firstSplit = input.Split(',', 3);
+        if (firstSplit.Length < 3)
+            throw new FormatException("Geçersiz format: Bölge, şehir ve devamı ayrıştırılamadı.");
 
-        var region = left[0].Trim();
-        var city = left[1].Trim();
-        var branchInfo = left[2].Trim();
-        var branchNumber = branchInfo.Contains("№")
-            ? branchInfo.Substring(branchInfo.IndexOf('№')).Split(' ')[0]
-            : "";
+        var region = firstSplit[0].Trim();
+        var city = firstSplit[1].Trim();
+        var rest = firstSplit[2].Trim();
 
-        var fullAddress = right[0].Trim();
-        var phone = right[1].Trim();
-        var workingHours = string.Join(", ", right.Skip(2).Select(x => x.Trim()));
+        // 2. Şube/poshmat ve adres/diğer bilgiler
+        var colonSplit = rest.Split(':', 2);
+        if (colonSplit.Length < 2)
+            throw new FormatException("Geçersiz format: ':' bulunamadı.");
+
+        var branchAndMaybeNumber = colonSplit[0].Trim();
+        var right = colonSplit[1].Split(',').Select(x => x.Trim()).ToList();
+
+        // Şube numarası (№) varsa al
+        string branchNumber = "";
+        var branchNumberMatch = System.Text.RegularExpressions.Regex.Match(branchAndMaybeNumber, @"№\d+");
+        if (branchNumberMatch.Success)
+            branchNumber = branchNumberMatch.Value;
+
+        // FullAddress: ilk virgülden sonraki kısım (adres)
+        var fullAddress = right.Count > 0 ? right[0] : "";
+
+        // Telefon: genellikle + ile başlar, yoksa boş bırak
+        var phone = right.FirstOrDefault(x => x.StartsWith("+")) ?? "";
+
+        // Çalışma saatleri: telefon ve adres dışındaki kalanlar
+        var workingHours = string.Join(", ", right.Where(x => x != fullAddress && x != phone));
 
         return new Address
         {
@@ -105,4 +122,5 @@ public class AddressService : IAddressService
             WorkingHours = workingHours
         };
     }
+
 }

@@ -28,3 +28,39 @@ export const deleteAddress = async (id) => {
     return response.data;
 };
 
+export async function bulkImportAddresses(file) {
+    const text = await file.text();
+    let addresses;
+    try {
+        addresses = JSON.parse(text);
+    } catch {
+        addresses = text
+            .split('\n')
+            .map(line => line.trim())
+            .filter(Boolean)
+            .map(line =>
+                line.replace(/^"(.*)"$/, '$1') // Satýr baþý ve sonundaki çift týrnaklarý kaldýrýr
+            );
+    }
+
+    const response = await fetch(`${API_BASE_URL}/addresses/bulk-import`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(addresses)
+    });
+
+    if (!response.ok) {
+        throw new Error('Toplu adres yüklenemedi');
+    }
+    // 204 No Content kontrolü
+    if (response.status === 204) {
+        return null;
+    }
+    return await response.json();
+}
+
+
+
+

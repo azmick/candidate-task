@@ -77,10 +77,7 @@ public class AddressService : IAddressService
     }
     private Address ParseAddress(string input)
     {
-        // Örnek: "Запорізька обл., Запоріжжя, Відділення №16 (до 30 кг на одне місце): просп. Леніна, 84, +380974805040, пн-ср 08:00-15:00, сб-нд 10:00-12:00"
-        // veya:  "Київська обл., Київ, Поштомат InPost 24/7, №2029: пр-т Повітрофлотський, 56а (цілодобовий поштомат біля маг.\"Billa\"), +380974803040, пн-ср 08:00-15:00, сб-нд 10:00-20:00"
-
-        // 1. Bölge ve şehir
+        // "Запорізька обл., Київ, Поштомат InPost 24/7, №2029: пр-т Оболонський, 21б (açıklama), +380974877040, пн-ср 05:00-21:00, сб-нд 10:00-16:00"
         var firstSplit = input.Split(',', 3);
         if (firstSplit.Length < 3)
             throw new FormatException("Geçersiz format: Bölge, şehir ve devamı ayrıştırılamadı.");
@@ -89,7 +86,6 @@ public class AddressService : IAddressService
         var city = firstSplit[1].Trim();
         var rest = firstSplit[2].Trim();
 
-        // 2. Şube/poshmat ve adres/diğer bilgiler
         var colonSplit = rest.Split(':', 2);
         if (colonSplit.Length < 2)
             throw new FormatException("Geçersiz format: ':' bulunamadı.");
@@ -97,20 +93,19 @@ public class AddressService : IAddressService
         var branchAndMaybeNumber = colonSplit[0].Trim();
         var right = colonSplit[1].Split(',').Select(x => x.Trim()).ToList();
 
+        // Sağdan sola: Son iki eleman çalışma saatleri, ondan önceki telefon, gerisi adres
+        if (right.Count < 4)
+            throw new FormatException("Geçersiz format: Yeterli alan yok.");
+
+        var workingHours = string.Join(", ", right.Skip(right.Count - 2));
+        var phone = right[right.Count - 3];
+        var fullAddress = string.Join(", ", right.Take(right.Count - 3));
+
         // Şube numarası (№) varsa al
         string branchNumber = "";
         var branchNumberMatch = System.Text.RegularExpressions.Regex.Match(branchAndMaybeNumber, @"№\d+");
         if (branchNumberMatch.Success)
             branchNumber = branchNumberMatch.Value;
-
-        // FullAddress: ilk virgülden sonraki kısım (adres)
-        var fullAddress = right.Count > 0 ? right[0] : "";
-
-        // Telefon: genellikle + ile başlar, yoksa boş bırak
-        var phone = right.FirstOrDefault(x => x.StartsWith("+")) ?? "";
-
-        // Çalışma saatleri: telefon ve adres dışındaki kalanlar
-        var workingHours = string.Join(", ", right.Where(x => x != fullAddress && x != phone));
 
         return new Address
         {
@@ -122,5 +117,4 @@ public class AddressService : IAddressService
             WorkingHours = workingHours
         };
     }
-
 }

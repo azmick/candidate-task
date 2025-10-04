@@ -1,5 +1,7 @@
-﻿import React, { useEffect, useState,useRef } from 'react';
+﻿import React, { useEffect, useState, useRef } from 'react';
 import { fetchAddresses, createAddress, updateAddress, deleteAddress, bulkImportAddresses } from '../api/addressApi';
+import { useTranslation } from 'react-i18next';
+import LanguageSwitcher from './LanguageSwitcher';
 import AddressForm from './AddressForm';
 import Modal from './Modal';
 import '../styles/AddressList.css';
@@ -22,6 +24,7 @@ const AddressList = () => {
     const [deleteConfirm, setDeleteConfirm] = useState({ open: false, id: null });
     const fileInputRef = useRef();
     const itemsPerPage = 8;
+    const { t } = useTranslation();
 
 
 
@@ -43,11 +46,11 @@ const AddressList = () => {
         if (editData) {
             const updated = await updateAddress(editData.id, form);
             setAddresses(addresses.map(a => a.id === editData.id ? updated : a));
-            showNotification('Adres güncellendi.');
+            showNotification(t('addressUpdated'));
         } else {
             const created = await createAddress(form);
             setAddresses([...addresses, created]);
-            showNotification('Adres eklendi.');
+            showNotification(t('addressCreated'));
         }
         setShowForm(false);
     };
@@ -58,16 +61,16 @@ const AddressList = () => {
         try {
             await bulkImportAddresses(file);
             fetchAddresses().then(data => setAddresses(data));
-            showNotification('Toplu adresler başarıyla yüklendi.');
+            showNotification(t('bulkUploadSuccess'));
         } catch (err) {
-            showNotification('Toplu adres yüklenemedi.');
+            showNotification(t('bulkUploadError'));
         }
     };
 
     const confirmDelete = async () => {
         await deleteAddress(deleteConfirm.id);
         setAddresses(addresses.filter(a => a.id !== deleteConfirm.id));
-        showNotification('Adres silindi.');
+        showNotification(t('addressDeleted'));
         setDeleteConfirm({ open: false, id: null });
     };
 
@@ -75,7 +78,7 @@ const AddressList = () => {
     useEffect(() => {
         fetchAddresses()
             .then(data => setAddresses(data))
-            .catch(err => setError('Veri alınamadı!'))
+            .catch(err => setError(t('errorLoadingData')))
             .finally(() => setLoading(false));
     }, []);
 
@@ -89,7 +92,7 @@ const AddressList = () => {
         .filter(item =>
             (selectedCity ? item.city === selectedCity : true) &&
             (selectedRegion ? item.region === selectedRegion : true)
-    );
+        );
 
     let sortedAddresses = [...filteredAddresses];
     if (sortField) {
@@ -128,164 +131,148 @@ const AddressList = () => {
 
     return (
         <div className="address-list-container">
-            {notification && (
-                <div className="address-toast address-toast--danger">
-                    <span role="img" aria-label="deleted" style={{ marginRight: 8 }}>🗑️</span>
-                    {notification}
-                    <button className="toast-close-btn" onClick={() => setNotification('')}>×</button>
-                </div>
-            )}
-            {loading && (
-                <div className="state-message">
-                    <div className="spinner"></div>
-                    <div>Adresler yükleniyor...</div>
-                </div>
-            )}
-            {error && (
-                <div className="state-message error-message">
-                    <span role="img" aria-label="error">⚠️</span> {error}
-                </div>
-            )}
-            {!loading && !error && addresses.length === 0 && (
-                <div className="state-message empty-message">
-                    <span role="img" aria-label="empty">📭</span>
-                    <div>Hiç adres bulunamadı.<br />Yeni bir adres ekleyebilirsiniz.</div>
-                </div>
-            )}
+            <div className="header-with-language">
+                <h2>{t('title')}</h2>
+                <LanguageSwitcher />
+            </div>
 
-            <h2>Відділення Нової Пошти в місті Одеса</h2>
-            <input
-                type="text"
-                className="address-search"
-                placeholder="Adres, şehir veya şube numarası ara..."
-                value={searchTerm}
-                onChange={e => setSearchTerm(e.target.value)}
-                style={{ marginBottom: 18, width: '100%', maxWidth: 350 }}
-            />
-            <div style={{ display: 'flex', gap: 12, marginBottom: 18 }}>
-                <select
-                    className="address-filter"
-                    value={selectedCity}
-                    onChange={e => setSelectedCity(e.target.value)}
-                >
-                    <option value="">Tüm Şehirler</option>
-                    {cityOptions.map(city => (
-                        <option key={city} value={city}>{city}</option>
-                    ))}
-                </select>
-                <select
-                    className="address-filter"
-                    value={selectedRegion}
-                    onChange={e => setSelectedRegion(e.target.value)}
-                >
-                    <option value="">Tüm Bölgeler</option>
-                    {regionOptions.map(region => (
-                        <option key={region} value={region}>{region}</option>
-                    ))}
-                </select>
-                <select
-                    className="address-filter"
-                    value={sortField}
-                    onChange={e => setSortField(e.target.value)}
-                >
-                    <option value="">Sıralama Yok</option>
-                    <option value="city">Şehir</option>
-                    <option value="region">Bölge</option>
-                    <option value="branchNumber">Şube No</option>
-                </select>
-                <button
-                    className="add-btn"
-                    style={{ minWidth: 36, padding: '0 10px' }}
-                    onClick={() => setSortOrder(sortOrder === 'asc' ? 'desc' : 'asc')}
-                    title={sortOrder === 'asc' ? 'Artan' : 'Azalan'}
-                    type="button"
-                >
-                    {sortOrder === 'asc' ? '↑' : '↓'}
-                </button>
-                <button
-                    className="add-btn"
-                    onClick={() => fileInputRef.current.click()}
-                    style={{ marginBottom: 12 }}
-                >
-                    Toplu Adres Yükle
-                </button>
+                {notification && (
+                    <div className="address-toast address-toast--danger">
+                        <span role="img" aria-label="deleted" style={{ marginRight: 8 }}>🗑️</span>
+                        {notification}
+                        <button className="toast-close-btn" onClick={() => setNotification('')}>×</button>
+                    </div>
+                )}
+                {loading && (
+                    <div className="state-message">
+                        <div className="spinner"></div>
+                        <div>{t('loading')}</div>
+                    </div>
+                )}
+                {error && (
+                    <div className="state-message error-message">
+                        <span role="img" aria-label="error">⚠️</span> {error}
+                    </div>
+                )}
+                {!loading && !error && addresses.length === 0 && (
+                    <div className="state-message empty-message">
+                        <span role="img" aria-label="empty">📭</span>
+                        <div>{t('noData')}</div>
+                    </div>
+                )}
+
                 <input
-                    type="file"
-                    accept=".csv,.xlsx"
-                    ref={fileInputRef}
-                    style={{ display: 'none' }}
-                    onChange={handleBulkImport}
+                    type="text"
+                    className="address-search"
+                    placeholder={t('search')}
+                    value={searchTerm}
+                    onChange={e => setSearchTerm(e.target.value)}
                 />
-            </div>
 
-            <button className="add-btn" onClick={handleAdd}>Yeni Adres Ekle</button>
-            <Modal open={showForm} onClose={() => setShowForm(false)}>
-                <AddressForm
-                    onSubmit={handleFormSubmit}
-                    initialData={editData}
-                    onCancel={() => setShowForm(false)}
-                />
-            </Modal>
-            <Modal open={deleteConfirm.open} onClose={() => setDeleteConfirm({ open: false, id: null })}>
-                <div style={{ textAlign: 'center', padding: 12 }}>
-                    <div style={{ fontSize: 18, marginBottom: 18 }}>Silmek istediğinize emin misiniz?</div>
-                    <div style={{ display: 'flex', gap: 12, justifyContent: 'center' }}>
-                        <button className="delete-modal-btn" onClick={confirmDelete}>Evet, Sil</button>
-                        <button className="delete-modal-btn" onClick={() => setDeleteConfirm({ open: false, id: null })}>Vazgeç</button>
-                    </div>
-                </div>
-            </Modal>
-            <div className="address-list-cards">
-                {paginatedAddresses.map((item, idx) => (
-                    <div className="address-card" key={item.id || idx}>
-                        <div className="address-info">
-                            <div><strong>Region:</strong> {item.region}</div>
-                            <div><strong>City:</strong> {item.city}</div>
-                            <div><strong>Branch Number:</strong> {item.branchNumber}</div>
-                            <div><strong>Full Address:</strong> {item.fullAddress}</div>
-                            <div><strong>Phone:</strong> {item.phone}</div>
-                            <div><strong>Working Hours:</strong> {item.workingHours}</div>
-                        </div>
-                        <div className="address-actions">
-                            <button className="edit-btn" onClick={() => handleEdit(item)}>
-                                <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" style={{ marginRight: 4, verticalAlign: 'middle' }}><path d="M12.1 3.9l-8.2 8.2-1.4 4.1 4.1-1.4 8.2-8.2c.4-.4.4-1 0-1.4l-1.3-1.3c-.4-.4-1-.4-1.4 0z" /></svg>
-                            </button>
-                            <button className="delete-btn" onClick={() => handleDeleteClick(item.id)}>
-                                <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" style={{ marginRight: 4, verticalAlign: 'middle' }}><path d="M2 4h12M6 4V2h4v2m1 0v10a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4h8z" /></svg>
-                            </button>
-                        </div>
-
-                    </div>
-                ))}
-            </div>
-            {totalPages > 1 && (
-                <div className="address-pagination">
+                <div className="filters-container">
+                    <select className="address-filter" value={selectedCity} onChange={e => setSelectedCity(e.target.value)}>
+                        <option value="">{t('allCities')}</option>
+                        {cityOptions.map(city => (
+                            <option key={city} value={city}>{city}</option>
+                        ))}
+                    </select>
+                    <select className="address-filter" value={selectedRegion} onChange={e => setSelectedRegion(e.target.value)}>
+                        <option value="">{t('allRegions')}</option>
+                        {regionOptions.map(region => (
+                            <option key={region} value={region}>{region}</option>
+                        ))}
+                    </select>
+                    <select className="address-filter" value={sortField} onChange={e => setSortField(e.target.value)}>
+                        <option value="">{t('noSort')}</option>
+                        <option value="city">{t('city')}</option>
+                        <option value="region">{t('region')}</option>
+                        <option value="branchNumber">{t('branchNumber')}</option>
+                    </select>
                     <button
-                        className="pagination-btn"
-                        onClick={() => setCurrentPage(p => Math.max(1, p - 1))}
-                        disabled={currentPage === 1}
+                        className="sort-btn"
+                        onClick={() => setSortOrder(sortOrder === 'asc' ? 'desc' : 'asc')}
+                        title={sortOrder === 'asc' ? t('ascending') : t('descending')}
                     >
-                        &lt;
+                        {sortOrder === 'asc' ? '↑' : '↓'}
                     </button>
-                    {Array.from({ length: totalPages }, (_, i) => (
-                        <button
-                            key={i + 1}
-                            className={`pagination-btn${currentPage === i + 1 ? ' active' : ''}`}
-                            onClick={() => setCurrentPage(i + 1)}
-                        >
-                            {i + 1}
-                        </button>
+                    <button className="bulk-btn" onClick={() => fileInputRef.current.click()}>
+                        {t('bulkUpload')}
+                    </button>
+                    <input
+                        type="file"
+                        accept=".csv,.xlsx"
+                        ref={fileInputRef}
+                        style={{ display: 'none' }}
+                        onChange={handleBulkImport}
+                    />
+                </div>
+
+                <button className="add-btn" onClick={handleAdd}>{t('addNew')}</button>
+                <Modal open={showForm} onClose={() => setShowForm(false)}>
+                    <AddressForm
+                        onSubmit={handleFormSubmit}
+                        initialData={editData}
+                        onCancel={() => setShowForm(false)}
+                    />
+                </Modal>
+                <Modal open={deleteConfirm.open} onClose={() => setDeleteConfirm({ open: false, id: null })}>
+                    <div style={{ textAlign: 'center', padding: 12 }}>
+                        <div style={{ fontSize: 18, marginBottom: 18 }}>{t('confirmDelete')}</div>
+                        <div style={{ display: 'flex', gap: 12, justifyContent: 'center' }}>
+                            <button className="delete-modal-btn" onClick={confirmDelete}>{t('yes')}</button>
+                            <button className="delete-modal-btn" onClick={() => setDeleteConfirm({ open: false, id: null })}>{t('cancel')}</button>
+                        </div>
+                    </div>
+                </Modal>
+                <div className="address-list-cards">
+                    {paginatedAddresses.map((item, idx) => (
+                        <div className="address-card" key={item.id || idx}>
+                            <div className="address-info">
+                                <div><strong>{t('region')}:</strong> {item.region}</div>
+                                <div><strong>{t('city')}:</strong> {item.city}</div>
+                                <div><strong>{t('branchNumber')}:</strong> {item.branchNumber}</div>
+                                <div><strong>{t('fullAddress')}:</strong> {item.fullAddress}</div>
+                                <div><strong>{t('phone')}:</strong> {item.phone}</div>
+                                <div><strong>{t('workingHours')}:</strong> {item.workingHours}</div>
+                            </div>
+                            <div className="address-actions">
+                                <button className="edit-btn" onClick={() => handleEdit(item)} title={t('edit')}>
+                                    <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" style={{ marginRight: 4, verticalAlign: 'middle' }}><path d="M12.1 3.9l-8.2 8.2-1.4 4.1 4.1-1.4 8.2-8.2c.4-.4.4-1 0-1.4l-1.3-1.3c-.4-.4-1-.4-1.4 0z" /></svg>
+                                </button>
+                                <button className="delete-btn" onClick={() => handleDeleteClick(item.id)} title={t('delete')}>
+                                    <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" style={{ marginRight: 4, verticalAlign: 'middle' }}><path d="M2 4h12M6 4V2h4v2m1 0v10a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4h8z" /></svg>
+                                </button>
+                            </div>
+                        </div>
                     ))}
-                    <button
-                        className="pagination-btn"
-                        onClick={() => setCurrentPage(p => Math.min(totalPages, p + 1))}
-                        disabled={currentPage === totalPages}
-                    >
-                        &gt;
-                    </button>
                 </div>
-            )}
-
+                {totalPages > 1 && (
+                    <div className="address-pagination">
+                        <button
+                            className="pagination-btn"
+                            onClick={() => setCurrentPage(p => Math.max(1, p - 1))}
+                            disabled={currentPage === 1}
+                        >
+                            &lt;
+                        </button>
+                        {Array.from({ length: totalPages }, (_, i) => (
+                            <button
+                                key={i + 1}
+                                className={`pagination-btn${currentPage === i + 1 ? ' active' : ''}`}
+                                onClick={() => setCurrentPage(i + 1)}
+                            >
+                                {i + 1}
+                            </button>
+                        ))}
+                        <button
+                            className="pagination-btn"
+                            onClick={() => setCurrentPage(p => Math.min(totalPages, p + 1))}
+                            disabled={currentPage === totalPages}
+                        >
+                            &gt;
+                        </button>
+                    </div>
+                )}
         </div>
     );
 };

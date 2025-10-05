@@ -101,8 +101,8 @@ const AddressList = () => {
             let valB = b[sortField];
             // SayÄ± ise sayÄ± olarak, deÄŸilse string olarak karÅŸÄ±laÅŸtÄ±r
             if (sortField === 'branchNumber') {
-                valA = Number(valA);
-                valB = Number(valB);
+                valA = extractBranchNumber(valA);
+                valB = extractBranchNumber(valB);
                 if (isNaN(valA)) valA = 0;
                 if (isNaN(valB)) valB = 0;
             } else {
@@ -125,7 +125,11 @@ const AddressList = () => {
         (currentPage - 1) * itemsPerPage,
         currentPage * itemsPerPage
     );
-
+    function extractBranchNumber(branchNumber) {
+        if (!branchNumber) return 0;
+        const match = branchNumber.match(/\d+/);
+        return match ? parseInt(match[0], 10) : 0;
+    }
 
 
 

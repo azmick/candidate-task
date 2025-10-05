@@ -1,4 +1,4 @@
-﻿import React, { useEffect, useState, useRef } from 'react';
+ï»¿import React, { useEffect, useState, useRef } from 'react';
 import { fetchAddresses, createAddress, updateAddress, deleteAddress, bulkImportAddresses } from '../api/addressApi';
 import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from './LanguageSwitcher';
@@ -80,7 +80,7 @@ const AddressList = () => {
             .then(data => setAddresses(data))
             .catch(err => setError(t('errorLoadingData')))
             .finally(() => setLoading(false));
-    }, []);
+    }, [t]);
 
     const filteredAddresses = addresses
         .filter(item =>
@@ -99,7 +99,7 @@ const AddressList = () => {
         sortedAddresses.sort((a, b) => {
             let valA = a[sortField];
             let valB = b[sortField];
-            // Sayı ise sayı olarak, değilse string olarak karşılaştır
+            // SayÄ± ise sayÄ± olarak, deÄŸilse string olarak karÅŸÄ±laÅŸtÄ±r
             if (sortField === 'branchNumber') {
                 valA = Number(valA);
                 valB = Number(valB);
@@ -138,9 +138,9 @@ const AddressList = () => {
 
                 {notification && (
                     <div className="address-toast address-toast--danger">
-                        <span role="img" aria-label="deleted" style={{ marginRight: 8 }}>🗑️</span>
+                        <span role="img" aria-label="deleted" style={{ marginRight: 8 }}>ğŸ—‘ï¸�</span>
                         {notification}
-                        <button className="toast-close-btn" onClick={() => setNotification('')}>×</button>
+                        <button className="toast-close-btn" onClick={() => setNotification('')}>Ã—</button>
                     </div>
                 )}
                 {loading && (
@@ -151,12 +151,12 @@ const AddressList = () => {
                 )}
                 {error && (
                     <div className="state-message error-message">
-                        <span role="img" aria-label="error">⚠️</span> {error}
+                        <span role="img" aria-label="error">âš ï¸�</span> {error}
                     </div>
                 )}
                 {!loading && !error && addresses.length === 0 && (
                     <div className="state-message empty-message">
-                        <span role="img" aria-label="empty">📭</span>
+                        <span role="img" aria-label="empty">ğŸ“­</span>
                         <div>{t('noData')}</div>
                     </div>
                 )}
@@ -193,7 +193,7 @@ const AddressList = () => {
                         onClick={() => setSortOrder(sortOrder === 'asc' ? 'desc' : 'asc')}
                         title={sortOrder === 'asc' ? t('ascending') : t('descending')}
                     >
-                        {sortOrder === 'asc' ? '↑' : '↓'}
+                        {sortOrder === 'asc' ? 'â†‘' : 'â†“'}
                     </button>
                     <button className="bulk-btn" onClick={() => fileInputRef.current.click()}>
                         {t('bulkUpload')}

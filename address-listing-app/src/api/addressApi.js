@@ -4,7 +4,6 @@ const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
 
 export const fetchAddresses = async () => {
     const response = await axios.get(`${API_BASE_URL}/addresses`);
-    console.log(response.data);
     return response.data;
 };
 

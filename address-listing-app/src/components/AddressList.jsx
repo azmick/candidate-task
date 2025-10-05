@@ -1,4 +1,4 @@
-ï»¿import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { fetchAddresses, createAddress, updateAddress, deleteAddress, bulkImportAddresses } from '../api/addressApi';
 import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from './LanguageSwitcher';

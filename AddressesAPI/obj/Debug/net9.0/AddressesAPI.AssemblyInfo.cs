@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AddressesAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dd497749c846bb9e4c13028cae861285426cb990")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c458fe2a14f4dd9fb3256ab0db1943bf8375a5bf")]
 [assembly: System.Reflection.AssemblyProductAttribute("AddressesAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AddressesAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

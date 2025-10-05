@@ -180,3 +180,5 @@ C:\Users\acagr\source\repos\azmick\candidate-task\AddressesAPI\bin\Debug\net9.0\
 C:\Users\acagr\source\repos\azmick\candidate-task\AddressesAPI\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\acagr\source\repos\azmick\candidate-task\AddressesAPI\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\acagr\source\repos\azmick\candidate-task\AddressesAPI\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\acagr\source\repos\azmick\candidate-task\AddressesAPI\bin\Debug\net9.0\Npgsql.dll
+C:\Users\acagr\source\repos\azmick\candidate-task\AddressesAPI\bin\Debug\net9.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll

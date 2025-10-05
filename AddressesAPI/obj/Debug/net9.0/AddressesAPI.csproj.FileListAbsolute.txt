@@ -158,7 +158,6 @@ C:\Users\acagr\source\repos\azmick\candidate-task\AddressesAPI\obj\Debug\net9.0\
 C:\Users\acagr\source\repos\azmick\candidate-task\AddressesAPI\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.AddressesAPI.props
 C:\Users\acagr\source\repos\azmick\candidate-task\AddressesAPI\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.AddressesAPI.props
 C:\Users\acagr\source\repos\azmick\candidate-task\AddressesAPI\obj\Debug\net9.0\staticwebassets.pack.json
-C:\Users\acagr\source\repos\azmick\candidate-task\AddressesAPI\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\acagr\source\repos\azmick\candidate-task\AddressesAPI\obj\Debug\net9.0\Addresse.70352BC5.Up2Date
 C:\Users\acagr\source\repos\azmick\candidate-task\AddressesAPI\obj\Debug\net9.0\AddressesAPI.dll
 C:\Users\acagr\source\repos\azmick\candidate-task\AddressesAPI\obj\Debug\net9.0\refint\AddressesAPI.dll
